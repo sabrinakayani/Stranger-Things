@@ -38,10 +38,10 @@
       margin-right: 20px;
       margin-bottom:40px;
       width:100%;
-      margin-top:-20px;
+      margin-top:-35px;
       border-radius: 6px;
       background-color:#f5f5dc;  
-     
+      transform: skewY(2deg);
      
     }
    
@@ -104,10 +104,16 @@
     
     .carte{
       margin-right:40px;
-
+      transition-duration: calc(1s/3);
+      transition: background-color calc(1s/3);
+    }
+    
+    .carte:hover {
+      transform: scale(5);
+      background-color: #dddddd ;   
 
     }
- 
+
 
 </style>
 

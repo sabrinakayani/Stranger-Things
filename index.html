@@ -41,7 +41,9 @@
       margin-top:-35px;
       border-radius: 6px;
       background-color:#f5f5dc;  
+      transition-property: background-color;
       transform: skewY(2deg);
+      
      
     }
    
@@ -105,15 +107,18 @@
     .carte{
       margin-right:40px;
       transition-duration: calc(1s/3);
-      transition: background-color calc(1s/3);
     }
     
-    .carte:hover {
-      transform: scale(5);
-      background-color: #dddddd ;   
-
+    .carte:hover{
+      transform: scale(1.05);
+      
     }
+    .carte:hover .text{
+        background-color: #dddddd  ;
+      }
 
+
+    
 
 </style>
 

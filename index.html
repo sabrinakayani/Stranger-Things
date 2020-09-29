@@ -43,6 +43,7 @@
       display: block;
       width: 100%;
     }
+    
     .personnage{
       margin-left: 20px;
       margin-right: 20px;
@@ -51,8 +52,8 @@
       position: relative;
       z-index: -1;
       width: 100%;
-
     }
+
     .dustin {
       background-image: linear-gradient(#e8f5ff, #45b2ff);
     }
@@ -70,9 +71,10 @@
     }
     
     .carte {
-      margin-right: 40px;
       transition-duration: calc(1s/3);
-   
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: column;
     }
     
     .carte:hover {
@@ -86,6 +88,7 @@
    .flex {
       display: flex;
       flex-wrap: wrap;
+      justify-content: space-evenly;
     }
 
     @media (min-width:600px) {
